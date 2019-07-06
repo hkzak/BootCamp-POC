@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Easy tikcet booking">
+    <meta name="keywords" content="easy booking, cheap tickets, cheap airlines">
+    <meta name="author" content="Zakarya Alsalahi">
+    <title>FlyNas | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/tooplate-style.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+
+    <script>
+        function hide() {
+            // var checkO = document.getElementById('oneway').checked;
+            if (document.getElementById('oneway').checked == true) {
+                document.getElementById('return-d').style.display = "none";
+
+            } else if (document.getElementById('round').checked) {
+                document.getElementById('return-d').style.display = "block";
+
+            }
+        }
+    </script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-1">
+            <div id="branding">
+                <h1><span class="highlight">Fly</span>Nas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <!-- <img class="image" src="./images/background.png" width="100%" height="auto"> -->
+
+        <section class="banner" id="top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="left-side">
+                            <div class="logo">
+                                <!-- <img src="images/logo.png " height="200" width="200" alt="Flight Template"> -->
+                            </div>
+                            <div class="tabs-content">
+                                <h4>Look For us on Social Media:</h4>
+                                <ul class="social-links">
+                                    <li><a href="http://facebook.com">Find us on <em>Facebook</em><i class="fa fa-facebook"></i></a></li>
+                                    <li><a href="http://youtube.com">Our <em>YouTube</em> Channel<i class="fa fa-youtube"></i></a></li>
+                                    <li><a href="http://instagram.com">Follow our <em>instagram</em><i class="fa fa-instagram"></i></a></li>
+                                </ul>
+                            </div>
+                            <div class="page-direction-button">
+                                <a href="contact.html"><i class="fa fa-phone"></i>Contact Us Now</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-md-offset-1">
+                        <section id="first-tab-group" class="tabgroup">
+                            <div id="tab1">
+                                <div class="submit-form">
+                                    <h4>Search for <em>Flights</em>:</h4>
+                                    <form id="form-submit" action="" method="get">
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <label for="from"> Departure From:</label>
+                                                    <select required name='from'>
+                                                            <option value="">City Or Airport...</option>
+                                                            <option value="NYC-JFK">NYC-JFK</option>
+                                                            <option value="Manila-MNL">Manila-MNL</option>
+                                                            <option value="India">India</option>
+                                                            <option value="Japan">Japan</option>
+                                                            <option value="Korea">Korea</option>
+                                                            <option value="Laos">Laos</option>
+                                                            <option value="Myanmar">Myanmar</option>
+                                                            <option value="Singapore">Singapore</option>
+                                                            <option value="Thailand">Thailand</option>
+                                                            <option value="Vietnam">Vietnam</option>
+                                                        </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <label for="to"> Arrival Att:</label>
+                                                    <select required name='to'>
+                                                            <option value="">City or Airport...</option>
+                                                            <option value="NYC-JFK">NYC-JFK</option>
+                                                            <option value="Manila-MNL">Manila-MNL</option>
+                                                            <option value="India">India</option>
+                                                            <option value="Japan">Japan</option>
+                                                            <option value="Korea">Korea</option>
+                                                            <option value="Laos">Laos</option>
+                                                            <option value="Myanmar">Myanmar</option>
+                                                            <option value="Singapore">Singapore</option>
+                                                            <option value="Thailand">Thailand</option>
+                                                            <option value="Vietnam">Vietnam</option>
+                                                        </select>
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <label for="departure">Departure date:</label>
+                                                    <input name="deparure" type="date" class="form-control date" id="departure" placeholder="Select date..." required="">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset id="return-d">
+                                                    <label for="return">Return date:</label>
+                                                    <input name="return" type="date" class="form-control date" id="return" placeholder="Select date..." required="">
+                                                </fieldset>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="radio-select">
+                                                    <div class="row">
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                            <label for="round">Round</label>
+                                                            <input type="radio" name="trip" id="round" value="round" required="required" onclick="hide();">
+                                                        </div>
+                                                        <div class="col-md-6 col-sm-6 col-xs-6">
+                                                            <label for="oneway">Oneway</label>
+                                                            <input type="radio" name="trip" id="oneway" value="one-way" checked="checked" onclick="hide()">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <fieldset>
+                                                    <button type="submit" id="form-submit" class="btn" onclick="location.href='flights.html'">Search</button>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container-1">
+                <h1>Explore Your Deals</h1>
+            </div>
+        </section>
+        <section id="boxes">
+            <div class="container-1">
+                <div class="box">
+                    <img src="./images/logo_flights.PNG" height="100" width="100">
+                    <h3>Flights</h3>
+                    <p>Search and book cheapest flights with ease</p>
+                </div>
+                <div class="box">
+                    <img src="./images/logo_cabs.PNG" height="100" width="100">
+                    <h3>Cabs</h3>
+                    <p>Find cabs near you and book with one click</p>
+                </div>
+                <div class="box">
+                    <img src="./images/logo_buses.png" height="100" width="100">
+                    <h3>Buses</h3>
+                    <p>Look for bus routes and reserve your seats</p>
+                </div>
+            </div>
+        </section>
+        <section id="boxes-1">
+            <div class="container-1">
+                <div class="box-1">
+                    <img src="./images/logo_trains.PNG" height="100" width="100">
+                    <h3>Trains</h3>
+                    <p>Navigate nearby trains and their schedule</p>
+                </div>
+                <div class="box-1">
+                    <img src="./images/logo_hotels.PNG" height="100" width="100">
+                    <h3>Hotels</h3>
+                    <p>Find best hotels and book your rooms</p>
+                </div>
+                <div class="box-1">
+                    <img src="./images/logo_holidays.PNG" height="100" width="100">
+                    <h3>Holidays</h3>
+                    <p>Looking for an escape plan, check our latest deals</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="primary-button">
+                            <a href="#" class="scroll-top">Back To Top</a>
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+
+                    </div>
+                    <div class="col-md-12">
+                        <p>Copyright &copy; 2019 Flight Tour and Travel Company | Fly<a href="http://www.tooplate.com/view/2093-flight" target="_parent"><em>Nas</em></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- <script>
+            // Tabs
+            function openLink(evt, linkName) {
+                var i, x, tablinks;
+                x = document.getElementsByClassName("myLink");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                tablinks = document.getElementsByClassName("tablink");
+                for (i = 0; i < x.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" w3-red", "");
+                }
+                document.getElementById(linkName).style.display = "block";
+                evt.currentTarget.className += " w3-red";
+            }
+
+            // Click on the first tablink on load
+            document.getElementsByClassName("tablink")[0].click();
+        </script> -->
+
+
+</body>
+
+</html>
