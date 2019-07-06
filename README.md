@@ -9,5 +9,7 @@ Fly Nas Web App
  
  this code is free to edit play with or share. 
  
+ Find the "BootcampPoc-Screenshot" png to see the files arrangement to avoid changing files paths in the html pages. All pics should be saved in the images file and all the .css should saved in a css file and all .js should be saved in a js file. 
+ 
  
  Zak, 
