@@ -13,3 +13,6 @@ Fly Nas Web App
  
  
  Zak, 
+ 
+ UPDATE 08/07/2019 !!!
+ Deleted all the single files and uploaded the whole folder at once. 
