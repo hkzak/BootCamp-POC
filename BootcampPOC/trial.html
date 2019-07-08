@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Easy tikcet booking">
+    <meta name="keywords" content="easy booking, cheap tickets, cheap airlines">
+    <meta name="author" content="Zakarya Alsalahi">
+    <title>FlyNas | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./css/tooplate-style.css">
+    <link rel="stylesheet" href="./css/datepicker.css">
+    <link rel="stylesheet" href="./css/slidingForm.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <script type="text/javascript" src="./js/sliding.form.js"></script>
+
+
+</head>
+
+<body>
+    <header>
+        <div class="container-1">
+            <div id="branding">
+                <h1><span class="highlight">Fly</span>Nas</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li class="current"><a href="index.html">Home</a></li>
+                    <li><a href="tickets.html">Tickets</a></li>
+                    <li><a href="login.html">Account</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div id="content">
+            <div id="wrapper">
+                <div id="steps">
+                    <form id="formElem" name="formElem" action="" method="post">
+                        <fieldset class="step">
+                            <legend>Flight Information</legend>
+                            <div class="row flight-card">
+                                <div class="col-xs-4">
+
+                                    <h5 class="subtitle">Mon, 14 Dec</h5>
+
+                                    <h4 class="subtitle">MNL</h4>
+
+                                    <h5 class="noBorder">9:10pm</h5>
+
+                                </div>
+                                <div class="col-xs-4">
+                                    <center>
+                                        <h5 class="noBorder">30h 12m (2 Stops) </h5><br>
+                                        <img src="./images/from-to.png" height="50px" alt="">
+                                        <h4 class="noBorder">Philippines AIrline</h4>
+                                    </center>
+                                </div>
+                                <div class="col-xs-3">
+                                    <h5 class="text-right">Tue</h5>
+                                    <h4 class="subtitle text-right">JFK</h4>
+                                    <h5 class="text-right">7:22pm</h5>
+                                </div>
+                            </div>
+                            <p>
+                                <label>Total Fare </label>
+                                <label class="text-right">$ 527</label>
+                                <label class="subtitle">Including 2 Meals </label>
+                            </p>
+                            <p>
+                                <label>Fare Information</label>
+                                <a href="">
+                                    <label class="text-right">View fare rules</label>
+                                </a>
+                                <!-- <input id="email" name="email" placeholder="info@tympanus.net" type="email" AUTOCOMPLETE=OFF /> -->
+                            </p>
+                            <p>
+                                <label>Secure Your Trip</label>
+                                <a href="">
+                                    <label class="text-right">Click Here</label>
+                                </a>
+                                <!-- <input id="password" name="password" type="password" AUTOCOMPLETE=OFF /> -->
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Personal Details</legend>
+                            <p>
+                                <label for="name">Full Name</label>
+                                <input id="name" name="name" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="country">Country</label>
+                                <input id="country" name="country" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="phone">Phone</label>
+                                <input id="phone" name="phone" placeholder="e.g. +351215555555" type="tel" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="website">Passport Number</label>
+                                <input id="website" name="website" placeholder="e.g. 27792344" type="tel" AUTOCOMPLETE=OFF />
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Payment Options</legend>
+                            <p>
+                                <label>Credit/Debit Card</label>
+
+                            </p>
+                            <p>
+                                <label>Net Banking</label>
+
+                            </p>
+                            <p>
+                                <label>Mobile Wallet</label>
+
+                                <p>
+                                    <label>Gift Card</label>
+
+                                </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Card Details</legend>
+                            <p>
+                                <label for="cardtype">Card</label>
+                                <select id="cardtype" name="cardtype">
+                                            <option>Visa</option>
+                                            <option>Mastercard</option>
+                                            <option>American Express</option>
+                                        </select>
+                            </p>
+                            <p>
+                                <label for="cardnumber">Card number</label>
+                                <input id="cardnumber" name="cardnumber" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="secure">Security code</label>
+                                <input id="secure" name="secure" type="number" AUTOCOMPLETE=OFF />
+                            </p>
+                            <p>
+                                <label for="namecard">Name on Card</label>
+                                <input id="namecard" name="namecard" type="text" AUTOCOMPLETE=OFF />
+                            </p>
+                        </fieldset>
+                        <fieldset class="step">
+                            <legend>Confirm</legend>
+
+                            <div class="col-mx-4">
+                                <img src="./images/ticket.png" width="50%" height="200px">
+                            </div>
+
+                            <p class="submit">
+                                <button id="registerButton" type="submit" onclick="window.location.href='index.html'">Register</button>
+                            </p>
+
+                        </fieldset>
+                    </form>
+                </div>
+                <div id="navigation" style="display:none;">
+                    <ul>
+                        <li class="selected">
+                            <a href="#">Flight</a>
+                        </li>
+                        <li>
+                            <a href="#">Personal Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment</a>
+                        </li>
+                        <li>
+                            <a href="#">Details</a>
+                        </li>
+                        <li>
+                            <a href="#">Confirm</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="container-1">
+            <h1>Explore Your Deals</h1>
+        </div>
+    </section>
+    <section id="boxes">
+        <div class="container-1">
+            <div class="box">
+                <img src="./images/logo_flights.PNG" height="100" width="100">
+                <h3>Flights</h3>
+                <p>Search and book cheapest flights with ease</p>
+            </div>
+            <div class="box">
+                <img src="./images/logo_cabs.PNG" height="100" width="100">
+                <h3>Cabs</h3>
+                <p>Find cabs near you and book with one click</p>
+            </div>
+            <div class="box">
+                <img src="./images/logo_buses.png" height="100" width="100">
+                <h3>Buses</h3>
+                <p>Look for bus routes and reserve your seats</p>
+            </div>
+        </div>
+    </section>
+    <section id="boxes-1">
+        <div class="container-1">
+            <div class="box-1">
+                <img src="./images/logo_trains.PNG" height="100" width="100">
+                <h3>Trains</h3>
+                <p>Navigate nearby trains and their schedule</p>
+            </div>
+            <div class="box-1">
+                <img src="./images/logo_hotels.PNG" height="100" width="100">
+                <h3>Hotels</h3>
+                <p>Find best hotels and book your rooms</p>
+            </div>
+            <div class="box-1">
+                <img src="./images/logo_holidays.PNG" height="100" width="100">
+                <h3>Holidays</h3>
+                <p>Looking for an escape plan, check our latest deals</p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="primary-button">
+                        <a href="#" class="scroll-top">Back To Top</a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+
+                </div>
+                <div class="col-md-12">
+                    <p>Copyright &copy; 2019 Flight Tour and Travel Company | Fly<a href="http://www.tooplate.com/view/2093-flight" target="_parent"><em>Nas</em></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

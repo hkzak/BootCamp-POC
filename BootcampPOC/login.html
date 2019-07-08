@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Flynas-login">
+    <meta name="keywords" content="easy booking, cheap tickets, cheap airlines">
+    <meta name="author" content="Zakarya Alsalahi">
+    <title>FlyNas | Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".login-form").hide;
+            $(".login-form").hide();
+            $(".login").css("background", "none");
+
+            $(".login").click(function() {
+                $(".signup-form").hide();
+                $(".login-form").show();
+                $(".signup").css("background", "none");
+                $(".login").css("background", "#fff");
+            });
+
+            $(".signup").click(function() {
+                $(".signup-form").show();
+                $(".login-form").hide();
+                $(".login").css("background", "none");
+                $(".signup").css("background", "#fff");
+            });
+            $(".special").click(function() {
+                $(".signup-form").hide();
+                $(".login-form").show();
+                $(".signup").css("background", "none");
+                $(".login").css("background", "#fff");
+            });
+
+            $(".btn").click(function() {
+                $(".input").val("");
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <div class="container-1">
+            <div id="branding">
+                <h1><span class="highlight">Fly</span>Nas</h1>
+            </div>
+        </div>
+    </header>
+    <div class="wrapper">
+        <div class="logo">
+            <img src="./images/login.png" width="200px" height="200px" alt="logo">
+        </div>
+        <div class="container-login">
+
+            <div class="signup">Sign Up</div>
+            <div class="login">Log In</div>
+
+            <div class="signup-form">
+                <input type="text" placeholder="First Name" class="input"><br />
+                <input type="text" placeholder="Last Name" class="input"><br />
+                <input type="text" placeholder="Your Email Address" class="input"><br />
+                <input type="password" placeholder="Choose a Password" class="input"><br />
+                <input type="password" placeholder="Re-Enter Password" class="input"><br />
+                <a href="index.html"><button class="btn">Create Account</button></a>
+                <span class="special"><a href="#">Already have an Account ? Sign in </a></span>
+            </div>
+
+            <div class="login-form">
+                <input type="text" placeholder="Email or Username" class="input"><br />
+                <input type="password" placeholder="Password" class="input"><br />
+                <a href="index.html"><button class="btn">Log In </button></a>
+
+                <span><a href="#">Forgot password ?</a></span>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
